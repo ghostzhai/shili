@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+  .first-layout.ant-layout {
+    > .ant-layout-content{
+      div.pd-150 {
+        padding: 0px;
+        .ant-col-7 {
+          width: 100%;
+        }
+        .ant-col-7.ant-col-offset-1 {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .input-w {width: 100%}
+  .second-layout {
+    .ant-layout-header {
+      display: none;
+    }
+    .ant-tabs-nav-wrap {
+      display: none;
+    }
+    .ant-layout-content .ant-tabs {
+      height: 100%;
+      width: 100% !important;
+      margin: 0 auto;
+      position: unset;
+    }
+    .ant-tabs-content {
+      padding-top: 1px !important;
+    }
+    .ant-tabs.pd-t-20.ant-layout {
+      padding-top: 0px !important;
+    }
+  }
+  .ant-col-6{
+    width: 92%;
+  }
+  .ant-col-8{
+    width: 92%;
+  }
+  .ant-col-12{
+    width: 92% !important;
+  }
+  .ant-col-5 {
+    width: 92%;
+  }
+  .ant-form-item-label {
+    //自适应 ipad 会有点问题所以注释掉
+    //display: block;
+    //width: 25%;
+    line-height: 39px;
+  }
+  .card {
+    width: 100% !important;
+  }
+  //大路由的本体下拉显示，为响应式设计
+  ul.ant-menu{
+    li.xs_owl_property {
+      display: block !important;
+    }
+    li.xs_owl_link {
+      display: block !important;
+    }
+    li.xs_entity_entity_view {
+      display: block !important;
+    }
+    li.xs_entity_link_list {
+      display: block !important;
+    }
+    li.entity_manage {
+      display: none !important;
+    }
+  }
+  .a-1-01{
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-right: 20px;
+  }
+  .zitu-zuo-box {
+    margin-left: 0px !important;
+    border-left: none !important;
+  }
+  .zitu-you-box {
+    padding: 10px !important;
+  }
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 16px 12px;
+  }
+  .shititupu {
+    margin: 1px !important;
+  }
+  ul.ant-menu {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .model-h {
+    display: none;
+  }
+  .overf-hidden-lie {
+    overflow: visible !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .first-layout.ant-layout {
+    > .ant-layout-header {
+      text-align: center;
+      a.home {
+        position: relative;
+      }
+      img {
+        padding-left: 0px;
+      }
+      .ant-menu {
+        margin: 0 !important;
+        width: 100% !important;
+      }
+    }
+    > .ant-layout-content{
+      padding-top: 130px;
+      div.pd-150 {
+        padding: 0px;
+        .ant-col-7.ant-col-offset-1 {
+        }
+        >.mg-t-b-54.ant-row{
+          margin-top: 75px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  .second-layout.ant-layout {
+    > .ant-layout-content .ant-tabs {
+      width: 100%;
+    }
+    >.ant-layout-header{
+      padding-top: 20px;
+    }
+    .xs-pd-b-10 {
+      margin-bottom: 10px;
+    }
+  }
+}

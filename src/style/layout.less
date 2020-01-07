@@ -1,0 +1,124 @@
+.second-layout.ant-layout {
+  & > .ant-layout-header {
+    background-color: #fff;
+    padding-top: 10px;
+    min-height: 100px;
+    overflow: hidden;
+
+    & > .ant-row-flex {
+      width: @width;
+      margin: 0 auto;
+      h2 {
+        font-weight:600;
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+  }
+
+  & > .ant-layout-content {
+    .ant-tabs {
+      height: 100%;
+      width: @width;
+      margin: 0 auto;
+      position: unset;
+
+      & > .ant-tabs-bar {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        & > .ant-tabs-nav-container {
+          width: @width;
+          margin: 0 auto;
+        }
+      }
+      //padding-buttom 因手机有个下边灰色 去掉
+      .ant-tabs-content {
+        height: 100%;
+        padding-top: 66px;
+        //padding-bottom: 20px;
+        .ant-tabs-tabpane {
+          background-color: #fff;
+          overflow: auto;
+        }
+      }
+    }
+    .title-tabs {
+      position: absolute;
+      bottom: 0;
+      margin: 0 -20px;
+    }
+  }
+}
+.third-layout.ant-layout {
+  & > .ant-layout-header {
+    background-color: #fff;
+    padding-top: 10px;
+    min-height: 100px;
+    overflow: hidden;
+
+    & > .ant-row-flex {
+      width: @width;
+      margin: 0 auto;
+      padding: 0 20px;
+      h2 {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  & > .ant-layout-content {
+    .slot-header {
+      background-color: #fff;
+      .ant-menu{
+        width: @width;
+        margin: 0 auto;
+      }
+    }
+
+    .slot-container {
+      width: @width;
+      margin: 0 auto;
+      padding-top: 15px;
+    }
+  }
+}
+
+.second-breadcrumb {
+  cursor: pointer;
+
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.layout-panel {
+  border: 0;
+  border-top-left-radius: 3px;
+
+  .ant-card-head {
+    padding: 0;
+    margin: 0 20px;
+
+    .ant-card-head-title {
+      padding: 0;
+      margin: 10px 0;
+      border-left: 4px solid rgba(24, 144, 255, 1);
+      padding-left: 15px;
+
+      & > span {
+        font-size: 18px;
+        font-weight: bold;
+
+        i {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
+
+.layout-panel.panel-gray {
+  background-color: rgba(249, 250, 251, 0.6);
+}

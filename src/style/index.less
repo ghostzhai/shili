@@ -1,0 +1,196 @@
+html, body, #app, .ant-layout, .ant-layout-content, .container, .component-container {
+  height: 100%
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-y: hidden;
+  background-color: #f0f2f5;
+  color:#6d6e70;
+}
+::-webkit-scrollbar{width:6px;background-color:#edeff5}
+::-webkit-scrollbar-thumb{background-color:#c3cad4;border-radius:6px;border:0px solid #e1e5ea;}
+::-webkit-scrollbar-thumb:hover{background-color:#aab1bc;}
+::-webkit-scrollbar-thumb:active{border:0;border-radius:6px;background-color:#aeb2b8}
+::-webkit-scrollbar-thumb:window-inactive{background-color:#aeb2b8}
+
+ul {
+  list-style: none;
+}
+
+@import "definition";
+@import "layout";
+@import "navbar";
+@import "zoom";
+@import "search";
+@import "home";
+@import "mobile";
+.mg-t-10 {
+  margin-top: 10px;
+}
+
+.mg-t-20 {
+  margin-top: 20px;
+}
+
+.pd-t-10 {
+  padding-top: 10px;
+}
+
+.box {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  .ant-card-body {
+    display: flex;
+  }
+}
+
+.card {
+  margin-bottom: 5px;
+  width: 32%;
+  border-radius: 8px;
+  background: #EDEDED;
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+  text-align:center;
+}
+
+.flex2 {
+  flex: 2
+}
+
+.flex3 {
+  flex: 3;
+  .ant-card-meta-title{
+    border-bottom: 1px dashed #1890ff;
+  }
+}
+
+.result-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+.pd-t-24 {
+  padding-top: 24px;
+}
+
+.pd-t-20 {
+  padding-top: 20px;
+}
+
+.pd-l-5 {
+  padding-left: 5px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bd-b {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ft-r {
+  float: right;
+}
+
+.mg-b-20 {
+  margin-bottom: 10px;
+}
+.pd-l-f-10{
+  padding:10px 0px;
+}
+
+//大路由的本体下拉显示，为响应式设计
+ul.ant-menu{
+  li.xs_owl_property {
+    display: none;
+  }
+  li.xs_owl_link {
+    display: none;
+  }
+  li.xs_entity_entity_view {
+    display: none;
+  }
+  li.xs_entity_link_list {
+    display: none;
+  }
+}
+//覆盖全局 表格 border-right: 不显示
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-bordered .ant-table-tbody > tr > td{
+  border-right: none;
+}
+//这谁的啊~谁知道注释下
+.mod-ht {
+  height: 700px !important;
+  width: 100%;
+  video {
+    height: 700px !important;
+  }
+  iframe {
+    width: 100%;
+    height: 700px !important;
+  }
+}
+//头 编译后有黑色背景 覆盖它
+.ant-layout-header{
+  background:#fff!important;
+}
+//本体 实体 等 用到左边栏 有黑色背景问题 是因为有margin 8px原因 导致黑边
+////覆盖它的 index.less 原ul li样式
+.ant-menu-vertical,
+.ant-menu-vertical-left,
+.ant-menu-vertical-right,
+.ant-menu-inline .ant-menu-item{
+  //background: #fff;
+  margin: 0px !important;
+ }
+.ant-layout-sider {
+  background: #fff !important;
+}
+
+//模态框统一 样式
+//.ant-modal-content {
+//  max-width: 600px;
+//  margin: auto;
+//}
+//.ant-modal-content .ant-modal-body {
+//  max-height: 30em;
+//}
+//.ant-modal-content .ant-spin-nested-loading {
+//  overflow: auto;
+//  max-height: 300px;
+//}
+
+//手机适配 的黑色按钮
+.ant-layout-sider-zero-width-trigger {
+  z-index: 1;
+  top: 1px;
+  background: #1890ff;
+}
+.ant-layout-sider-zero-width-trigger:hover {
+  background:#1890ff;
+}

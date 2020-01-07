@@ -1,0 +1,31 @@
+.first-layout.ant-layout {
+  & > .ant-layout-header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.05);
+
+    a.home {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0 27px;
+    }
+
+    ul.ant-menu {
+      line-height: 64px;
+      width: 528px;
+      margin: 0 auto;
+      li.ant-menu-submenu {
+        padding: 0 10px;
+      }
+    }
+  }
+  & > .ant-layout-content {
+    padding-top: 64px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "search": [
+    {
+      "name": "实体查询",
+      "key": "entity",
+      "component": "search",
+      "params": "entity"
+    },
+    {
+      "name": "关系查询",
+      "key": "relation",
+      "component": "search",
+      "params": "relation"
+    },
+    {
+      "name": "关联查询",
+      "key": "correlation",
+      "component": "search",
+      "params": "correlation"
+    },
+    {
+      "name": "路径查询",
+      "key": "path",
+      "component": "search",
+      "params": "path"
+    },
+    {
+      "name": "联合查询",
+      "key": "union",
+      "component": "search",
+      "params": "union"
+    },
+    {
+      "name": "路径探寻",
+      "key": "explore",
+      "component": "search",
+      "params": "explore"
+    },
+    {
+      "name": "多媒体查询",
+      "key": "media",
+      "component": "search",
+      "params": "media"
+    }
+  ],
+  "owl": [
+    {
+      "name": "可视化",
+      "key": "owl",
+      "component": "owl"
+    },
+    {
+      "name": "本体管理",
+      "key": "owl_manage",
+      "component": "owl_manage",
+      "params": "owl"
+    },
+    {
+      "name": "属性管理",
+      "key": "xs_owl_property",
+      "component": "owl_manage",
+      "params": "xs_owl_property"
+    },
+    {
+      "name": "关联管理",
+      "key": "xs_owl_link",
+      "component": "owl_manage",
+      "params": "xs_owl_link"
+    },
+    {
+      "name": "OWL导入/导出",
+      "key": "owl_import",
+      "component": "owl_import"
+    }
+  ],
+  "entity": [
+    {
+      "name": "可视化",
+      "key": "entity_visualization",
+      "component": "entity_visualization"
+    },
+    {
+      "name": "实体管理",
+      "key": "entity_manage",
+      "component": "entity_manage",
+      "params": "entity_manage"
+    },
+    {
+      "name": "实体浏览",
+      "key": "xs_entity_entity_view",
+      "component": "entity_manage",
+      "params": "xs_entity_entity_view"
+    },
+    {
+      "name": "关联列表",
+      "key": "xs_entity_link_list",
+      "component": "entity_manage",
+      "params": "xs_entity_link_list"
+    },
+    {
+      "name": "联合添加",
+      "key": "entity_union",
+      "component": "entity_union"
+    },
+    {
+      "name": "关系数据库导入",
+      "key": "entity_import",
+      "component": "entity_import"
+    },
+    {
+      "name": "清除数据",
+      "key": "clear_data",
+      "component": "entity_clear"
+    }
+  ],
+  "compute": [
+    {
+      "name": "子图生成",
+      "key": "compute_create",
+      "component": "compute_create"
+    },
+    {
+      "name": "关系补全",
+      "key": "compute_relation",
+      "component": "compute_relation"
+    },
+    {
+      "name": "业务数据生成",
+      "key": "compute_business",
+      "component": "compute_business"
+    },
+    {
+      "name": "子图管理",
+      "key": "compute_manager",
+      "component": "compute_manager"
+    },
+    {
+      "name": "历史管理",
+      "key": "compute_history",
+      "component": "compute_history"
+    }
+  ]
+}

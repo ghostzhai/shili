@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UNI GRAPH</title>
+</head>
+<body>
+<div>
+  <label for="ip">localhost</label>
+  <input id="ip" name="ip" type="text" value="192.168.1.30"/>
+  <button onclick="go()">go</button>
+</div>
+<script>
+  function go() {
+    var ip = document.getElementById('ip')
+    var value = ip.value
+    if (value) {
+      window.location = 'http://' + value
+    }
+  }
+</script>
+</body>
+</html>
